@@ -748,6 +748,29 @@ a {
 
     .nav {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
     }
 
     .hero-content {
@@ -764,6 +787,7 @@ a {
         width: 100%;
         margin: 0 auto;
     }
+}
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
