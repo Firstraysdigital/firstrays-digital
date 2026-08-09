@@ -759,7 +759,7 @@ a {
     }
 
     .nav-button {
-        display: none;
+        display: inline-block;
     }
 
     .nav-container {
