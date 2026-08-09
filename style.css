@@ -864,3 +864,9 @@ a {
         gap: 15px;
     }
 }
+.logo img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 50%;
+}
