@@ -747,7 +747,7 @@ a {
 @media (max-width: 900px) {
 
     .nav {
-        display: none;
+        display: flex;
     }
 
     .hero-content {
