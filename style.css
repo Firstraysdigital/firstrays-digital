@@ -139,7 +139,7 @@ a {
             rgba(255, 255, 255, 0.15) 75%,
             rgba(255, 255, 255, 0.05) 100%
         ),
-       url("home-bg.png");
+       url("/home-bg.png");
 
     background-size: cover;
     background-position: center;
