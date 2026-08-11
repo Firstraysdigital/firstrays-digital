@@ -197,31 +197,44 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 24px;
+
+    padding: 13px 25px;
     border-radius: 30px;
+
     font-weight: 700;
     font-size: 14px;
+
     transition: 0.3s ease;
 }
 
 .primary-button {
-    background: var(--dark);
-    color: var(--white);
+    background: rgba(10, 16, 22, 0.72);
+    color: #ffffff;
+
+    border: 1px solid rgba(244, 178, 72, 0.75);
 }
 
 .primary-button:hover {
-    background: var(--primary-dark);
+    background: rgba(10, 16, 22, 0.88);
+    border-color: #f4b248;
+    color: #ffffff;
+
     transform: translateY(-3px);
 }
 
 .secondary-button {
-    border: 1px solid var(--dark);
-    color: var(--dark);
+    background: rgba(10, 16, 22, 0.50);
+    color: #ffffff;
+
+    border: 1px solid rgba(244, 178, 72, 0.75);
 }
 
 .secondary-button:hover {
-    background: var(--dark);
-    color: var(--white);
+    background: rgba(10, 16, 22, 0.75);
+    border-color: #f4b248;
+    color: #ffffff;
+
+    transform: translateY(-3px);
 }
 
 .hero-card {
