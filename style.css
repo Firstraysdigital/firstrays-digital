@@ -764,15 +764,11 @@ a {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-
 /* =========================================
    RESPONSIVE DESIGN
    ========================================= */
 
 @media (max-width: 900px) {
-
-
-}
 
     .nav {
         display: flex;
@@ -815,7 +811,6 @@ a {
         width: 100%;
         margin: 0 auto;
     }
-}
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -844,8 +839,6 @@ a {
 
 
 @media (max-width: 600px) {
-
-}
 
     .nav-button {
         display: none;
@@ -918,6 +911,7 @@ a {
         gap: 15px;
     }
 }
+
 .logo img {
     width: 42px;
     height: 42px;
