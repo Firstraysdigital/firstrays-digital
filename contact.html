@@ -1,1 +1,753 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | FirstRays Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* ================================
+           CONTACT PAGE
+        ================================= */
+
+        .contact-page {
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.90) 0%,
+                    rgba(255, 255, 255, 0.76) 50%,
+                    rgba(255, 255, 255, 0.58) 100%
+                ),
+                url("contact-bg.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            padding: 75px 0 90px;
+        }
+
+
+        /* ================================
+           HEADING
+        ================================= */
+
+        .contact-heading {
+            max-width: 760px;
+
+            margin: 0 auto 45px;
+
+            text-align: center;
+        }
+
+        .contact-heading .eyebrow {
+            display: inline-block;
+
+            margin-bottom: 12px;
+
+            font-size: 13px;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: #e56b4f;
+        }
+
+        .contact-heading h1 {
+            margin-bottom: 18px;
+
+            font-size: 52px;
+            line-height: 1.1;
+
+            color: #101820;
+        }
+
+        .contact-heading h1 span {
+            color: #e56b4f;
+        }
+
+        .contact-heading p {
+            font-size: 16px;
+            line-height: 1.8;
+
+            color: #4d5963;
+        }
+
+
+        /* ================================
+           CONTACT LAYOUT
+        ================================= */
+
+        .contact-layout {
+            max-width: 1050px;
+
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns: 0.9fr 1.1fr;
+
+            gap: 20px;
+        }
+
+
+        /* ================================
+           CONTACT INFO
+        ================================= */
+
+        .contact-info {
+            padding: 30px;
+
+            background: rgba(10, 16, 22, 0.76);
+
+            border: 1px solid rgba(244, 178, 72, 0.70);
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 12px 35px rgba(0, 0, 0, 0.20);
+
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+
+        .contact-info h2 {
+            margin-bottom: 10px;
+
+            font-size: 28px;
+
+            color: #ffffff;
+        }
+
+        .contact-info h2 span {
+            color: #f4b248;
+        }
+
+        .contact-info > p {
+            margin-bottom: 25px;
+
+            font-size: 14px;
+            line-height: 1.7;
+
+            color: rgba(255, 255, 255, 0.76);
+        }
+
+
+        /* ================================
+           CONTACT ITEMS
+        ================================= */
+
+        .contact-item {
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-bottom: 15px;
+
+            padding: 15px;
+
+            background: rgba(255, 255, 255, 0.05);
+
+            border: 1px solid rgba(244, 178, 72, 0.35);
+
+            border-radius: 14px;
+
+            transition: 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-3px);
+
+            background: rgba(244, 178, 72, 0.08);
+
+            border-color: rgba(244, 178, 72, 0.80);
+        }
+
+        .contact-icon {
+            width: 44px;
+            height: 44px;
+
+            flex-shrink: 0;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: rgba(244, 178, 72, 0.10);
+
+            border: 1px solid rgba(244, 178, 72, 0.65);
+
+            color: #f4b248;
+
+            font-size: 18px;
+        }
+
+        .contact-item small {
+            display: block;
+
+            margin-bottom: 3px;
+
+            font-size: 11px;
+            font-weight: 700;
+
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            color: #f4b248;
+        }
+
+        .contact-item a {
+            color: #ffffff;
+
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+
+        /* ================================
+           SERVICES BOX
+        ================================= */
+
+        .contact-services {
+            margin-top: 25px;
+        }
+
+        .contact-services h3 {
+            margin-bottom: 13px;
+
+            font-size: 18px;
+
+            color: #ffffff;
+        }
+
+        .service-tags {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+        .service-tag {
+            padding: 8px 12px;
+
+            background: rgba(244, 178, 72, 0.08);
+
+            border: 1px solid rgba(244, 178, 72, 0.45);
+
+            border-radius: 20px;
+
+            color: rgba(255, 255, 255, 0.88);
+
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+
+        /* ================================
+           CONTACT CTA
+        ================================= */
+
+        .contact-action {
+            padding: 35px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            background: rgba(10, 16, 22, 0.76);
+
+            border: 1px solid rgba(244, 178, 72, 0.70);
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 12px 35px rgba(0, 0, 0, 0.20);
+
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+
+        .contact-action .eyebrow {
+            margin-bottom: 12px;
+
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: #f4b248;
+        }
+
+        .contact-action h2 {
+            margin-bottom: 15px;
+
+            font-size: 36px;
+            line-height: 1.2;
+
+            color: #ffffff;
+        }
+
+        .contact-action p {
+            margin-bottom: 25px;
+
+            font-size: 15px;
+            line-height: 1.7;
+
+            color: rgba(255, 255, 255, 0.78);
+        }
+
+
+        /* ================================
+           WHATSAPP BUTTON
+        ================================= */
+
+        .whatsapp-button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: fit-content;
+
+            padding: 14px 26px;
+
+            background: transparent;
+
+            border: 1px solid #f4b248;
+
+            border-radius: 30px;
+
+            color: #f4b248;
+
+            font-size: 14px;
+            font-weight: 800;
+
+            transition: 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            background: #f4b248;
+
+            color: #101820;
+
+            transform: translateY(-3px);
+        }
+
+
+        /* ================================
+           BOTTOM CTA
+        ================================= */
+
+        .contact-bottom {
+            max-width: 1050px;
+
+            margin: 30px auto 0;
+
+            padding: 25px 28px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+
+            background: rgba(10, 16, 22, 0.72);
+
+            border: 1px solid rgba(244, 178, 72, 0.65);
+
+            border-radius: 18px;
+
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+
+        .contact-bottom h3 {
+            margin-bottom: 5px;
+
+            font-size: 21px;
+
+            color: #ffffff;
+        }
+
+        .contact-bottom p {
+            font-size: 14px;
+
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .contact-bottom a {
+            display: inline-flex;
+
+            padding: 11px 23px;
+
+            border: 1px solid #f4b248;
+
+            border-radius: 30px;
+
+            color: #f4b248;
+
+            font-size: 14px;
+            font-weight: 800;
+
+            white-space: nowrap;
+
+            transition: 0.3s ease;
+        }
+
+        .contact-bottom a:hover {
+            background: #f4b248;
+
+            color: #101820;
+        }
+
+
+        /* ================================
+           MOBILE
+        ================================= */
+
+        @media (max-width: 768px) {
+
+            .contact-page {
+                padding: 55px 20px 70px;
+            }
+
+            .contact-heading h1 {
+                font-size: 38px;
+            }
+
+            .contact-heading p {
+                font-size: 15px;
+            }
+
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-action h2 {
+                font-size: 30px;
+            }
+
+            .contact-bottom {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+
+                <img
+                    src="logo.png.jpeg"
+                    alt="FirstRays Digital Logo"
+                >
+
+                <span>
+                    FirstRays <strong>Digital</strong>
+                </span>
+
+            </a>
+
+
+            <nav class="nav">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="packages.html">
+                    Packages
+                </a>
+
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <a
+                href="https://wa.me/919347618173"
+                class="nav-button"
+            >
+                Let's Talk
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Contact Page -->
+
+    <main class="contact-page">
+
+        <div class="container">
+
+
+            <!-- Heading -->
+
+            <div class="contact-heading">
+
+                <span class="eyebrow">
+                    Contact Us
+                </span>
+
+                <h1>
+                    Let's Start a
+                    <span>Conversation.</span>
+                </h1>
+
+                <p>
+                    Have a project, idea or business goal in mind?
+                    Let's talk about how FirstRays Digital can help
+                    you build a stronger digital presence.
+                </p>
+
+            </div>
+
+
+
+            <!-- Contact Layout -->
+
+            <div class="contact-layout">
+
+
+                <!-- Contact Information -->
+
+                <div class="contact-info">
+
+                    <h2>
+                        Get in <span>Touch.</span>
+                    </h2>
+
+                    <p>
+                        We would love to hear about your business,
+                        school or college and understand how we can
+                        help you grow online.
+                    </p>
+
+
+                    <!-- WhatsApp -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ☎
+                        </div>
+
+                        <div>
+
+                            <small>
+                                WhatsApp
+                            </small>
+
+                            <a
+                                href="https://wa.me/919347618173"
+                            >
+                                Chat with us
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ✉
+                        </div>
+
+                        <div>
+
+                            <small>
+                                Email
+                            </small>
+
+                            <a
+                                href="mailto:hello@firstraysdigital.com"
+                            >
+                                hello@firstraysdigital.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Website -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+                            ◉
+                        </div>
+
+                        <div>
+
+                            <small>
+                                Website
+                            </small>
+
+                            <a
+                                href="https://firstraysdigital.com"
+                            >
+                                firstraysdigital.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Services -->
+
+                    <div class="contact-services">
+
+                        <h3>
+                            How Can We Help?
+                        </h3>
+
+                        <div class="service-tags">
+
+                            <span class="service-tag">
+                                Social Media
+                            </span>
+
+                            <span class="service-tag">
+                                Graphic Design
+                            </span>
+
+                            <span class="service-tag">
+                                Website Development
+                            </span>
+
+                            <span class="service-tag">
+                                Google Business
+                            </span>
+
+                            <span class="service-tag">
+                                Digital Marketing
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Contact Action -->
+
+                <div class="contact-action">
+
+                    <span class="eyebrow">
+                        Let's Work Together
+                    </span>
+
+                    <h2>
+                        Ready to grow your
+                        digital presence?
+                    </h2>
+
+                    <p>
+                        Tell us about your business, school or college,
+                        and what you want to achieve. We'll discuss the
+                        right digital solution for you.
+                    </p>
+
+                    <a
+                        href="https://wa.me/919347618173"
+                        class="whatsapp-button"
+                    >
+                        WhatsApp Us
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Bottom CTA -->
+
+            <div class="contact-bottom">
+
+                <div>
+
+                    <h3>
+                        Let's build something great together.
+                    </h3>
+
+                    <p>
+                        Start a conversation with FirstRays Digital today.
+                    </p>
+
+                </div>
+
+                <a
+                    href="https://wa.me/919347618173"
+                >
+                    Let's Talk
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+</body>
+</html>
