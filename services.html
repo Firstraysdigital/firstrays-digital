@@ -1,1 +1,388 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="FirstRays Digital services including Social Media Management, Graphic Design, Website Development and Google Business Profile.">
+
+    <title>Our Services | FirstRays Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ================================
+           SERVICES PAGE
+        ================================= */
+
+        .services-page {
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.94) 0%,
+                    rgba(255, 255, 255, 0.82) 45%,
+                    rgba(255, 255, 255, 0.30) 100%
+                ),
+                url("/services-bg.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            padding: 80px 0 100px;
+        }
+
+        .services-heading {
+            max-width: 750px;
+            margin-bottom: 55px;
+        }
+
+        .services-heading .eyebrow {
+            display: inline-block;
+            margin-bottom: 14px;
+
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: var(--primary-dark);
+        }
+
+        .services-heading h1 {
+            font-size: 52px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+
+            color: var(--dark);
+        }
+
+        .services-heading h1 span {
+            color: var(--primary-dark);
+        }
+
+        .services-heading p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: var(--text);
+        }
+
+        /* Service Cards */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            position: relative;
+
+            padding: 35px;
+            min-height: 250px;
+
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+
+            box-shadow: 0 15px 40px rgba(16, 24, 32, 0.10);
+
+            transition: 0.35s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 20px 45px rgba(16, 24, 32, 0.16);
+        }
+
+        .service-number {
+            position: absolute;
+            top: 22px;
+            right: 25px;
+
+            font-size: 14px;
+            font-weight: 800;
+
+            color: rgba(16, 24, 32, 0.25);
+        }
+
+        .service-icon {
+            width: 58px;
+            height: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 22px;
+
+            border-radius: 16px;
+
+            background: var(--dark);
+            color: var(--white);
+
+            font-size: 25px;
+        }
+
+        .service-card h2 {
+            margin-bottom: 12px;
+
+            font-size: 23px;
+            color: var(--dark);
+        }
+
+        .service-card p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--muted);
+        }
+
+        /* Bottom CTA */
+
+        .services-cta {
+            margin-top: 55px;
+            padding: 35px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+
+            background: rgba(16, 24, 32, 0.95);
+            border-radius: 20px;
+
+            color: var(--white);
+        }
+
+        .services-cta h2 {
+            margin-bottom: 7px;
+            font-size: 27px;
+        }
+
+        .services-cta p {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 15px;
+        }
+
+        .services-cta a {
+            display: inline-block;
+
+            padding: 13px 25px;
+
+            background: var(--primary);
+            color: var(--dark);
+
+            border-radius: 30px;
+
+            font-size: 14px;
+            font-weight: 800;
+
+            white-space: nowrap;
+        }
+
+        /* ================================
+           MOBILE
+        ================================= */
+
+        @media (max-width: 768px) {
+
+            .services-page {
+                padding: 55px 20px 70px;
+            }
+
+            .services-heading h1 {
+                font-size: 38px;
+            }
+
+            .services-heading p {
+                font-size: 15px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                padding: 28px;
+            }
+
+            .services-cta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <img src="logo.png.jpeg" alt="FirstRays Digital Logo">
+                <span>FirstRays <strong>Digital</strong></span>
+            </a>
+
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="packages.html">Packages</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <a href="https://wa.me/919347618173" class="nav-button">
+                Let's Talk
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- Services Page -->
+    <main class="services-page">
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="services-heading">
+
+                <span class="eyebrow">
+                    What We Do
+                </span>
+
+                <h1>
+                    Our Digital
+                    <span>Services.</span>
+                </h1>
+
+                <p>
+                    We provide creative and practical digital solutions
+                    designed to help businesses, schools and colleges
+                    build a stronger online presence and connect with
+                    the right audience.
+                </p>
+
+            </div>
+
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+
+
+                <!-- Service 01 -->
+                <div class="service-card">
+
+                    <div class="service-number">01</div>
+
+                    <div class="service-icon">◉</div>
+
+                    <h2>
+                        Social Media Management
+                    </h2>
+
+                    <p>
+                        Build a consistent and engaging social media
+                        presence with creative posts, captions,
+                        content planning and regular updates.
+                    </p>
+
+                </div>
+
+
+                <!-- Service 02 -->
+                <div class="service-card">
+
+                    <div class="service-number">02</div>
+
+                    <div class="service-icon">✎</div>
+
+                    <h2>
+                        Graphic Design
+                    </h2>
+
+                    <p>
+                        Create professional social media creatives,
+                        promotional designs, admission campaigns,
+                        event graphics and branded visual content.
+                    </p>
+
+                </div>
+
+
+                <!-- Service 03 -->
+                <div class="service-card">
+
+                    <div class="service-number">03</div>
+
+                    <div class="service-icon">&lt;/&gt;</div>
+
+                    <h2>
+                        Website Development
+                    </h2>
+
+                    <p>
+                        Develop clean, modern and mobile-friendly
+                        websites that represent your brand and make
+                        it easier for customers and parents to connect.
+                    </p>
+
+                </div>
+
+
+                <!-- Service 04 -->
+                <div class="service-card">
+
+                    <div class="service-number">04</div>
+
+                    <div class="service-icon">⌖</div>
+
+                    <h2>
+                        Google Business Profile
+                    </h2>
+
+                    <p>
+                        Set up and optimize your Google Business Profile
+                        so customers, parents and students can find your
+                        organization more easily online.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CTA -->
+            <div class="services-cta">
+
+                <div>
+                    <h2>
+                        Ready to grow your digital presence?
+                    </h2>
+
+                    <p>
+                        Let's discuss how FirstRays Digital can help
+                        your business, school or college grow online.
+                    </p>
+                </div>
+
+                <a href="https://wa.me/919347618173">
+                    Let's Talk
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
