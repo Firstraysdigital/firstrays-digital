@@ -198,58 +198,112 @@
            COLLEGE SECTION
         ================================= */
 
-        .college-section {
-            max-width: 1100px;
-            margin: 55px auto 0;
+     .college-section {
+    position: relative;
 
-            padding: 30px;
+    max-width: 1050px;
+    margin: 25px auto 0;
 
-            background: rgba(10, 16, 22, 0.62);
+    padding: 32px 30px;
 
-            border: 1px solid rgba(244, 178, 72, 0.55);
-            border-radius: 20px;
+    background: rgba(10, 16, 22, 0.72);
 
-            backdrop-filter: blur(2px);
-            -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(244, 178, 72, 0.62);
+    border-radius: 20px;
 
-            text-align: center;
-        }
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.25);
 
-        .college-section h2 {
-            margin-bottom: 10px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 
-            font-size: 28px;
+    color: #ffffff;
 
-            color: #ffffff;
-        }
+    transition: 0.35s ease;
+}
 
-        .college-section h2 span {
-            color: #f4b248;
-        }
+.college-section:hover {
+    transform: translateY(-5px);
+    border-color: rgba(244, 178, 72, 0.95);
+}
 
-        .college-section p {
-            max-width: 700px;
-            margin: 0 auto 20px;
+.college-section .package-number {
+    position: absolute;
+    top: 20px;
+    right: 22px;
 
-            font-size: 15px;
-            line-height: 1.7;
+    color: #f4b248;
+}
 
-            color: rgba(255, 255, 255, 0.78);
-        }
+.college-section h2 {
+    margin-bottom: 8px;
 
-        .college-note {
-            display: inline-block;
+    font-size: 23px;
+    color: #ffffff;
+}
 
-            padding: 10px 20px;
+.college-section h2 span {
+    color: #f4b248;
+}
 
-            border: 1px solid rgba(244, 178, 72, 0.65);
-            border-radius: 30px;
+.college-section .package-type {
+    margin-bottom: 18px;
 
-            color: #f4b248;
+    color: #f4b248;
+}
 
-            font-size: 13px;
-            font-weight: 700;
-        }
+.college-section .package-price {
+    margin-bottom: 15px;
+
+    font-size: 30px;
+    font-weight: 800;
+
+    color: #ffffff;
+}
+
+.college-intro {
+    max-width: 700px;
+    margin-bottom: 18px;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.college-section ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.college-section li {
+    position: relative;
+
+    padding: 8px 0 8px 22px;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: rgba(255, 255, 255, 0.86);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.college-section li:last-child {
+    border-bottom: none;
+}
+
+.college-section li::before {
+    content: "✦";
+
+    position: absolute;
+    left: 0;
+    top: 8px;
+
+    color: #f4b248;
+}
 
 
         /* ================================
@@ -515,21 +569,40 @@
             <!-- College Packages -->
             <section class="college-section">
 
-                <h2>
-                    College <span>Digital Growth</span>
-                </h2>
+    <div class="package-number">04</div>
 
-                <p>
-                    We also create customized digital marketing packages
-                    for colleges based on their admissions, branding,
-                    social media and lead-generation requirements.
-                </p>
+    <h2>
+        College <span>Growth</span>
+    </h2>
 
-                <div class="college-note">
-                    Customized College Packages Available
-                </div>
+    <div class="package-type">
+        Custom Pricing
+    </div>
 
-            </section>
+    <div class="package-price">
+        Custom
+        <span>Pricing</span>
+    </div>
+
+    <p class="college-intro">
+        A flexible digital marketing solution tailored to your
+        college's goals and requirements.
+    </p>
+
+    <ul>
+        <li>Social Media Management</li>
+        <li>Facebook &amp; Instagram Management</li>
+        <li>Creative Social Media Posts</li>
+        <li>College Event Promotions</li>
+        <li>Admission Campaign Support</li>
+        <li>Student Achievement Promotions</li>
+        <li>Google Business Profile Management</li>
+        <li>Content Writing</li>
+        <li>Monthly Content Calendar</li>
+        <li>Performance Reporting</li>
+    </ul>
+
+</section>
 
 
             <!-- CTA -->
