@@ -274,6 +274,11 @@
 .college-section ul {
     list-style: none;
 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 35px;
+    row-gap: 0;
+
     margin: 0;
     padding: 0;
 }
@@ -392,6 +397,9 @@
                 grid-template-columns: 1fr;
                 max-width: 550px;
             }
+            .college-section ul {
+    grid-template-columns: 1fr;
+}
 
             .packages-cta {
                 flex-direction: column;
