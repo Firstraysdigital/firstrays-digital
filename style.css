@@ -906,3 +906,39 @@ a {
     object-fit: contain;
     border-radius: 50%;
 }
+
+.about-point {
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.about-point:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.point-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.point-description {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
+    line-height: 1.6;
+    transition: all 0.4s ease;
+}
+
+.about-point:hover .point-description {
+    max-height: 120px;
+    opacity: 1;
+    margin-top: 12px;
+}
