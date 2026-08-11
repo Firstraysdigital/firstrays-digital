@@ -440,7 +440,89 @@ a {
     font-size: 14px;
     line-height: 1.7;
 }
+/* ================================
+   INTRODUCTION VIDEO
+================================ */
 
+.intro-video-section {
+    max-width: 1050px;
+    margin: 55px auto 0;
+}
+
+.intro-video-box {
+    padding: 35px 30px;
+
+    background: rgba(10, 16, 22, 0.72);
+
+    border: 1px solid rgba(244, 178, 72, 0.65);
+    border-radius: 20px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.20);
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.intro-video-heading {
+    max-width: 760px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+.intro-video-heading .eyebrow {
+    display: inline-block;
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #f4b248;
+}
+
+.intro-video-heading h2 {
+    margin-bottom: 10px;
+
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.intro-video-heading h2 span {
+    color: #f4b248;
+}
+
+.intro-video-heading p {
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.intro-video {
+    width: 100%;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    border: 1px solid rgba(244, 178, 72, 0.45);
+
+    background: #000;
+}
+
+.intro-video video {
+    display: block;
+
+    width: 100%;
+    max-height: 560px;
+
+    object-fit: contain;
+
+    background: #000;
+}
 
 /* =========================================
    AUDIENCE
@@ -771,6 +853,22 @@ a {
 
 @media (max-width: 900px) {
 
+    /* existing code */
+
+    .intro-video-box {
+        padding: 28px 22px;
+    }
+
+    .intro-video-heading h2 {
+        font-size: 30px;
+    }
+
+    .intro-video-heading p {
+        font-size: 14px;
+    }
+
+}
+
     .nav {
         display: flex;
         flex-wrap: wrap;
@@ -841,6 +939,22 @@ a {
 
 
 @media (max-width: 600px) {
+
+    /* existing code */
+
+    .intro-video-box {
+        padding: 22px 15px;
+    }
+
+    .intro-video-heading h2 {
+        font-size: 26px;
+    }
+
+    .intro-video-heading p {
+        font-size: 14px;
+    }
+
+}
 
     .nav-button {
         display: none;
