@@ -1,1 +1,653 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | FirstRays Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* ================================
+           PORTFOLIO PAGE
+        ================================= */
+
+        .portfolio-page {
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(255, 255, 255, 0.90) 0%,
+                    rgba(255, 255, 255, 0.72) 50%,
+                    rgba(255, 255, 255, 0.55) 100%
+                ),
+                url("portfolio-bg.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            padding: 75px 0 90px;
+        }
+
+
+        /* ================================
+           HEADING
+        ================================= */
+
+        .portfolio-heading {
+            max-width: 760px;
+            margin: 0 auto 50px;
+
+            text-align: center;
+        }
+
+        .portfolio-heading .eyebrow {
+            display: inline-block;
+
+            margin-bottom: 12px;
+
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+            color: #e56b4f;
+        }
+
+        .portfolio-heading h1 {
+            margin-bottom: 18px;
+
+            font-size: 52px;
+            line-height: 1.1;
+
+            color: #101820;
+        }
+
+        .portfolio-heading h1 span {
+            color: #e56b4f;
+        }
+
+        .portfolio-heading p {
+            font-size: 16px;
+            line-height: 1.8;
+
+            color: #4d5963;
+        }
+
+
+        /* ================================
+           PORTFOLIO GRID
+        ================================= */
+
+        .portfolio-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 20px;
+
+            max-width: 1000px;
+
+            margin: 0 auto;
+        }
+
+
+        /* ================================
+           PORTFOLIO CARD
+        ================================= */
+
+        .portfolio-card {
+            position: relative;
+
+            min-height: 230px;
+
+            padding: 30px 28px;
+
+            background: rgba(10, 16, 22, 0.76);
+
+            border: 1px solid rgba(244, 178, 72, 0.70);
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 12px 35px rgba(0, 0, 0, 0.20);
+
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+
+            transition: 0.35s ease;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-6px);
+
+            background: rgba(10, 16, 22, 0.86);
+
+            border-color: rgba(244, 178, 72, 0.95);
+
+            box-shadow:
+                0 18px 40px rgba(0, 0, 0, 0.28);
+        }
+
+
+        /* ================================
+           NUMBER
+        ================================= */
+
+        .portfolio-number {
+            position: absolute;
+
+            top: 20px;
+            right: 22px;
+
+            font-size: 13px;
+            font-weight: 800;
+
+            color: #f4b248;
+        }
+
+
+        /* ================================
+           ICON
+        ================================= */
+
+        .portfolio-icon {
+            width: 52px;
+            height: 52px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 20px;
+
+            border-radius: 50%;
+
+            background: rgba(244, 178, 72, 0.10);
+
+            border: 1px solid rgba(244, 178, 72, 0.75);
+
+            color: #f4b248;
+
+            font-size: 22px;
+        }
+
+
+        /* ================================
+           CARD CONTENT
+        ================================= */
+
+        .portfolio-card h2 {
+            margin-bottom: 9px;
+
+            font-size: 22px;
+
+            color: #ffffff;
+        }
+
+        .portfolio-card p {
+            font-size: 14px;
+
+            line-height: 1.65;
+
+            color: rgba(255, 255, 255, 0.82);
+        }
+
+
+        /* ================================
+           WHO WE SERVE
+        ================================= */
+
+        .portfolio-serve {
+            max-width: 1000px;
+
+            margin: 50px auto 0;
+
+            padding: 30px;
+
+            background: rgba(10, 16, 22, 0.72);
+
+            border: 1px solid rgba(244, 178, 72, 0.65);
+
+            border-radius: 20px;
+
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+
+            text-align: center;
+        }
+
+        .portfolio-serve h2 {
+            margin-bottom: 22px;
+
+            font-size: 28px;
+
+            color: #ffffff;
+        }
+
+        .portfolio-serve h2 span {
+            color: #f4b248;
+        }
+
+        .serve-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 15px;
+        }
+
+        .serve-item {
+            padding: 18px;
+
+            background: rgba(255, 255, 255, 0.06);
+
+            border: 1px solid rgba(244, 178, 72, 0.40);
+
+            border-radius: 14px;
+
+            color: #ffffff;
+
+            font-size: 16px;
+            font-weight: 700;
+
+            transition: 0.3s ease;
+        }
+
+        .serve-item:hover {
+            transform: translateY(-4px);
+
+            background: rgba(244, 178, 72, 0.10);
+
+            border-color: rgba(244, 178, 72, 0.85);
+
+            color: #f4b248;
+        }
+
+
+        /* ================================
+           CTA
+        ================================= */
+
+        .portfolio-cta {
+            max-width: 1000px;
+
+            margin: 35px auto 0;
+
+            padding: 25px 28px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+
+            background: rgba(10, 16, 22, 0.72);
+
+            border: 1px solid rgba(244, 178, 72, 0.65);
+
+            border-radius: 18px;
+
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+        }
+
+        .portfolio-cta h3 {
+            margin-bottom: 5px;
+
+            font-size: 22px;
+
+            color: #ffffff;
+        }
+
+        .portfolio-cta p {
+            font-size: 14px;
+
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .portfolio-cta a {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 12px 24px;
+
+            background: transparent;
+
+            border: 1px solid #f4b248;
+
+            border-radius: 30px;
+
+            color: #f4b248;
+
+            font-size: 14px;
+            font-weight: 800;
+
+            white-space: nowrap;
+
+            transition: 0.3s ease;
+        }
+
+        .portfolio-cta a:hover {
+            background: #f4b248;
+
+            color: #101820;
+
+            transform: translateY(-3px);
+        }
+
+
+        /* ================================
+           MOBILE
+        ================================= */
+
+        @media (max-width: 768px) {
+
+            .portfolio-page {
+                padding: 55px 20px 70px;
+            }
+
+            .portfolio-heading h1 {
+                font-size: 38px;
+            }
+
+            .portfolio-heading p {
+                font-size: 15px;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+
+                max-width: 550px;
+            }
+
+            .serve-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-cta {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+
+                <img
+                    src="logo.png.jpeg"
+                    alt="FirstRays Digital Logo"
+                >
+
+                <span>
+                    FirstRays <strong>Digital</strong>
+                </span>
+
+            </a>
+
+
+            <nav class="nav">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="packages.html">
+                    Packages
+                </a>
+
+                <a href="portfolio.html">
+                    Portfolio
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <a
+                href="https://wa.me/919347618173"
+                class="nav-button"
+            >
+                Let's Talk
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Portfolio -->
+
+    <main class="portfolio-page">
+
+        <div class="container">
+
+
+            <!-- Heading -->
+
+            <div class="portfolio-heading">
+
+                <span class="eyebrow">
+                    Our Portfolio
+                </span>
+
+                <h1>
+                    Creative Work That
+                    <span>Creates Impact.</span>
+                </h1>
+
+                <p>
+                    Explore the digital solutions we create to help
+                    businesses, schools and colleges build stronger
+                    brands and connect with their audience.
+                </p>
+
+            </div>
+
+
+
+            <!-- Portfolio Services -->
+
+            <div class="portfolio-grid">
+
+
+                <!-- 01 -->
+
+                <div class="portfolio-card">
+
+                    <div class="portfolio-number">
+                        01
+                    </div>
+
+                    <div class="portfolio-icon">
+                        ◉
+                    </div>
+
+                    <h2>
+                        Social Media Management
+                    </h2>
+
+                    <p>
+                        Engaging social media content, consistent
+                        branding, captions and content planning
+                        designed to build a stronger online presence.
+                    </p>
+
+                </div>
+
+
+
+                <!-- 02 -->
+
+                <div class="portfolio-card">
+
+                    <div class="portfolio-number">
+                        02
+                    </div>
+
+                    <div class="portfolio-icon">
+                        ✎
+                    </div>
+
+                    <h2>
+                        Graphic Design
+                    </h2>
+
+                    <p>
+                        Professional social media creatives,
+                        promotional designs, admission campaigns,
+                        event graphics and branded visual content.
+                    </p>
+
+                </div>
+
+
+
+                <!-- 03 -->
+
+                <div class="portfolio-card">
+
+                    <div class="portfolio-number">
+                        03
+                    </div>
+
+                    <div class="portfolio-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h2>
+                        Website Development
+                    </h2>
+
+                    <p>
+                        Clean, modern and mobile-friendly websites
+                        designed to represent your brand and make it
+                        easier for customers and parents to connect.
+                    </p>
+
+                </div>
+
+
+
+                <!-- 04 -->
+
+                <div class="portfolio-card">
+
+                    <div class="portfolio-number">
+                        04
+                    </div>
+
+                    <div class="portfolio-icon">
+                        ⌖
+                    </div>
+
+                    <h2>
+                        Google Business Profile
+                    </h2>
+
+                    <p>
+                        Optimized Google Business Profiles that help
+                        customers, parents and students discover your
+                        organization more easily online.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Who We Serve -->
+
+            <section class="portfolio-serve">
+
+                <h2>
+                    Who We <span>Serve.</span>
+                </h2>
+
+
+                <div class="serve-grid">
+
+                    <div class="serve-item">
+                        Businesses
+                    </div>
+
+                    <div class="serve-item">
+                        Schools
+                    </div>
+
+                    <div class="serve-item">
+                        Colleges
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- CTA -->
+
+            <div class="portfolio-cta">
+
+                <div>
+
+                    <h3>
+                        Have a project in mind?
+                    </h3>
+
+                    <p>
+                        Let's create something meaningful for your brand.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://wa.me/919347618173"
+                >
+                    Let's Talk
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+</body>
+</html>
